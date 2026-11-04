@@ -1,0 +1,6 @@
+{
+  "name": "my-trader-skills",
+  "description": "Day trading skills: scanner, news, entry, exit, time machine, budget, risk, broker, alerts, analyst, pelosi.",
+  "version": "1.0.0",
+  "skills": "./"
+}

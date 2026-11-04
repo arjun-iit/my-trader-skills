@@ -1,0 +1,7 @@
+{
+  "name": "my-trader-skills",
+  "owner": { "name": "Arjun Mukherjee" },
+  "plugins": [
+    { "name": "my-trader-skills", "source": "./", "description": "My copy of the day trading skill pack." }
+  ]
+}
