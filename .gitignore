@@ -1,3 +1,4 @@
 # Runtime output written by the trader-* (US) and india-* skills (watchlists, configs, tickets)
 trader/
 trader-in/
+__pycache__/
