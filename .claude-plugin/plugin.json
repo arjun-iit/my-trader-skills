@@ -1,6 +1,6 @@
 {
   "name": "my-trader-skills",
-  "description": "Day trading skills. US: scanner, news, entry, exit, time machine, budget, risk, broker, alerts, analyst, pelosi. India (NSE): india-scanner, india-news, india-entry, india-exit. Groww: groww-budget, groww-risk, groww-broker (DRY-RUN by default).",
+  "description": "Day trading skills. US: scanner, news, entry, exit, time machine, budget, risk, broker, alerts, analyst, pelosi. India (NSE): india-scanner, india-news, india-entry, india-exit, india-timemachine. Groww: groww-budget, groww-risk, groww-broker (DRY-RUN by default).",
   "version": "1.0.0",
   "skills": "./"
 }

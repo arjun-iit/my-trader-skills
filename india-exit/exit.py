@@ -710,8 +710,8 @@ def cmd_plan(a):
         print("Note: " + w)
     if a.write:
         print("Wrote %s." % a.write)
-    print("Nothing was placed. Next: on Groww, /groww-budget sizes it to your max loss per trade (then /groww-risk, "
-          "/groww-broker); with another broker, size it yourself: shares = max loss / risk a share.")
+    print("Nothing was placed. Next: /india-timemachine replays it; then on Groww, /groww-budget sizes it to your "
+          "max loss per trade (then /groww-risk, /groww-broker); with another broker, shares = max loss / risk a share.")
     return 0
 
 

@@ -12,8 +12,8 @@ description: >-
   trader-in/orders.json in the exact shape of Groww's Trade API. Refuses stocks
   Groww does not allow for intraday. Nothing is placed. Use when the user says
   "how many shares on Groww", "size this trade", "I have Rs 50,000", "I only
-  want to risk Rs 500 a trade", "set my Groww rules", or after /india-exit
-  writes a plan, before /groww-risk.
+  want to risk Rs 500 a trade", "set my Groww rules", or after /india-exit and
+  /india-timemachine, before /groww-risk.
 argument-hint: "[--write] [--market | --limit PRICE] [--price PRICE]"
 ---
 

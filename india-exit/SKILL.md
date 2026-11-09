@@ -89,7 +89,8 @@ an ATR stop), `--now "2026-11-09 10:00"` (IST), `--json`.
    as a percent, reward:risk, the tick used, flat-by.
 3. If they agree, `exit.py plan --write` saves it for `/india-news` (which
    watches the planned symbol) and for their own records.
-4. Say that nothing was placed. On Groww: `/groww-budget` sizes it to their
+4. Say that nothing was placed. Next, `/india-timemachine` replays the plan
+   on the stock's last 60 days. On Groww: `/groww-budget` sizes it to their
    max loss per trade and re-rounds the prices to Groww's real tick, then
    `/groww-risk`, then `/groww-broker`. With another broker, sizing is theirs:
    shares = their max loss per trade / risk a share, rounded down.
