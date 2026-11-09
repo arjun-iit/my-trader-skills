@@ -89,9 +89,10 @@ an ATR stop), `--now "2026-11-09 10:00"` (IST), `--json`.
    as a percent, reward:risk, the tick used, flat-by.
 3. If they agree, `exit.py plan --write` saves it for `/india-news` (which
    watches the planned symbol) and for their own records.
-4. Sizing is theirs: shares = their max loss per trade / risk a share,
-   rounded down. Say that nothing was placed and that this pack has no sizing,
-   risk check or order tool for India yet.
+4. Say that nothing was placed. On Groww: `/groww-budget` sizes it to their
+   max loss per trade and re-rounds the prices to Groww's real tick, then
+   `/groww-risk`, then `/groww-broker`. With another broker, sizing is theirs:
+   shares = their max loss per trade / risk a share, rounded down.
 
 ## Example: Mon Nov 9 2026
 
@@ -121,7 +122,9 @@ at its price.
 
 - Education and tooling, not investment advice. This pack is not a
   SEBI-registered investment adviser or research analyst.
-- The India pack places no orders: it has no broker connection. Any order is
-  the user's own, placed by them with their own broker.
+- This skill places no orders. In this repo only groww-broker can, and only after
+  groww-risk passes that exact order, the user types an explicit yes for it and
+  clicks Yes on Claude Code's prompt (DRY-RUN until the user turns `live` on).
+  With any other broker, the order is the user's own.
 - No F&O, options, margin (MTF) or short selling: the pack plans cash-segment
   longs only.

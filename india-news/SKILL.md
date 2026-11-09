@@ -125,4 +125,4 @@ the brief.
 
 Education and tooling, not investment advice; this pack is not a
 SEBI-registered investment adviser or research analyst. This skill only reads
-and reports. The India pack places no orders.
+and reports. It never places an order.

@@ -710,8 +710,8 @@ def cmd_plan(a):
         print("Note: " + w)
     if a.write:
         print("Wrote %s." % a.write)
-    print("Nothing was placed. Next: size it to your own max loss per trade before you buy (risk a share x "
-          "shares); the India pack has no sizing, risk check or order tool yet.")
+    print("Nothing was placed. Next: on Groww, /groww-budget sizes it to your max loss per trade (then /groww-risk, "
+          "/groww-broker); with another broker, size it yourself: shares = max loss / risk a share.")
     return 0
 
 

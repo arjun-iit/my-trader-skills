@@ -190,7 +190,9 @@ never calls data real time, and never promises that a setup works.
 - Education and tooling, not investment advice. This pack is not a
   SEBI-registered investment adviser or research analyst, and a scan hit is a
   rules check, not a recommendation.
-- The India pack places no orders: it has no broker connection. Any order is
-  the user's own, placed by them with their own broker.
+- This skill places no orders. In this repo only groww-broker can, and only after
+  groww-risk passes that exact order, the user types an explicit yes for it and
+  clicks Yes on Claude Code's prompt (DRY-RUN until the user turns `live` on).
+  With any other broker, the order is the user's own.
 - No F&O, options, margin (MTF) or short selling: the pack plans cash-segment
   longs only.

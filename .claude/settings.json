@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(*groww.py place*)",
+      "Bash(*groww.py protect*)",
+      "Bash(*groww.py cancel*)"
+    ]
+  }
+}
