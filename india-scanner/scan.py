@@ -418,8 +418,16 @@ def load_offline(path):
 # ---------------------------------------------------------------- universe
 
 def _csv_rows(text):
+    """CSV text -> rows of stripped strings. Extra fields on a row (more than the header) are
+    ignored; a web page instead of a CSV is an error, not a crash."""
+    head = text.lstrip()[:200].lower()
+    if head.startswith("<") or "<html" in head:
+        raise ScanError("the site sent a web page, not the CSV list: try again in a minute")
     rows = list(csv.DictReader(io.StringIO(text.replace("\r", ""))))
-    return [{(k or "").strip(): (v or "").strip() for k, v in r.items()} for r in rows]
+    out = []
+    for r in rows:
+        out.append({(k or "").strip(): (v if isinstance(v, str) else "").strip() for k, v in r.items() if k is not None})
+    return out
 
 
 def build_equity_universe(text):
